@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>My API Practice</title>
+    </head>
+    <body>
+        <div id="main">
+            Something will go here
+        </div>
+     </body>
+
+     <script>
+
+function FMResults(myData){
+
+ var myDiv = document.getElementById("main");
+
+ myDiv.innerHTML = "<h2>" + myData.album.name + "</h2>" ;
+
+  console.log(myData.album.name);
+}
+
+</script>
+
+</html>
+
+<script
+src='http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=MY_API_KEY&callback=FMResults&artist=Lamb+Of+God&album=Sacrament&format=json'>
+</script>
